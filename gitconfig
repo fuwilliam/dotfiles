@@ -1,0 +1,36 @@
+[user]
+	email = williamfuu@gmail.com
+	name = fuwilliam
+	useConfigOnly = true
+[alias]
+	st = status -sb
+	lg = log --all --graph --decorate
+	lgc = log --all --graph --decorate --
+
+[init]
+	defaultBranch = master
+
+[color]
+	ui = auto
+
+[color "grep"]
+	match = cyan bold
+	selected = blue
+	context = normal
+	filename = magenta
+	linenumber = green
+	separator = yellow
+	function = blue
+
+[pretty]
+	line = "%C(auto)%h %<|(60,trunc)%s %C(green)%ad%C(auto)%d"
+	detail = "%C(auto)%h %s%n  %C(yellow)by %C(blue)%an %C(magenta)<%ae> [%G?] %C(green)%ad%n %C(auto)%d%n"
+
+[merge]
+	defaultToUpstream = true
+
+[push]
+	default = upstream
+
+[credential]
+	helper = cache --timeout=3600

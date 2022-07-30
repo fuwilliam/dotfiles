@@ -98,6 +98,11 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias mv="mv -i"           # -i prompts before overwrite
+alias mkdir="mkdir -p"     # -p make parent dirs as needed
+
+alias gs="git status"
+alias gc="git commit"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

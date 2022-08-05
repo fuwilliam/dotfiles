@@ -2,6 +2,7 @@
 	email = williamfuu@gmail.com
 	name = fuwilliam
 	useConfigOnly = true
+	signingkey = 16A00AB1B6E50862548BD47FBA1D57E988B17C2C
     
 [alias]
 	st = status -sb

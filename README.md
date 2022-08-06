@@ -1,4 +1,9 @@
-# dotfiles
-Messing around with dotfiles for Bash, Gitconfig, Tmux..
+# Dotfiles
+Messing around with *dotfiles* for: 
 
-Powered by https://github.com/anishathalye/dotbot
+- bashrc
+- tmux
+- gitconfig
+- jupyter
+
+    `Powered by https://github.com/anishathalye/dotbot`

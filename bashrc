@@ -14,6 +14,8 @@ tmux has-session -t=$session_name 2> /dev/null
 # 2. Create the session if it doesn't exists.
 if [[ $? -ne 0 ]]; then
   TMUX='' tmux new-session -d -s "$session_name"
+  service cron status || sudo service cron start
+  sudo hwclock -s
 fi
 
 # 3. Attach if outside of tmux, switch if you're in tmux.
@@ -30,10 +32,6 @@ case $- in
 esac
 
 export BROWSER="wslview"
-
-service cron status || sudo service cron start
-
-sudo hwclock -s
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -124,9 +122,12 @@ alias mkdir="mkdir -p"     # -p make parent dirs as needed
 alias gs="git status"
 alias gc="git commit"
 
+alias dc='docker-compose'
+
 alias jup='jupyter-lab'
 alias jupy='jupyter-lab'
 alias jupyn='jupyter notebook'
+alias jupyter='jupyter-lab'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert

@@ -15,7 +15,6 @@ tmux has-session -t=$session_name 2> /dev/null
 if [[ $? -ne 0 ]]; then
   TMUX='' tmux new-session -d -s "$session_name"
   service cron status || sudo service cron start
-  sudo hwclock -s
 fi
 
 # 3. Attach if outside of tmux, switch if you're in tmux.

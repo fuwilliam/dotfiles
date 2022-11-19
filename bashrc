@@ -156,3 +156,8 @@ if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
     GIT_PROMPT_ONLY_IN_REPO=1
     source $HOME/.bash-git-prompt/gitprompt.sh
 fi
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/fuwilliam/google-cloud-sdk/path.bash.inc' ]; then . '/home/fuwilliam/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/fuwilliam/google-cloud-sdk/completion.bash.inc' ]; then . '/home/fuwilliam/google-cloud-sdk/completion.bash.inc'; fi

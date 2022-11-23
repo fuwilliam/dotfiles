@@ -5,5 +5,6 @@ Messing around with *dotfiles* for:
 - tmux
 - gitconfig
 - jupyter
+- ...
 
-    `Powered by https://github.com/anishathalye/dotbot`
+Powered by https://github.com/anishathalye/dotbot

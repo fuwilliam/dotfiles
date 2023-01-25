@@ -161,6 +161,5 @@ if [ -f '/home/fuwilliam/google-cloud-sdk/path.bash.inc' ]; then . '/home/fuwill
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/fuwilliam/google-cloud-sdk/completion.bash.inc' ]; then . '/home/fuwilliam/google-cloud-sdk/completion.bash.inc'; fi
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
+
 source ~/.dbt-completion.bash

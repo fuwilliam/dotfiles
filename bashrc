@@ -8,6 +8,9 @@ export PATH="$HOME/.local/bin:$PATH"
 #fi
 session_name="main-session"
 
+function fixMonitors() { displayplacer "id:345FFAD0-3024-4BAA-9A51-C206D6992147 res:3200x1800 hz:60 color_depth:8 enabled:true scaling:on origin:(0,0) degree:0" "id:E5414878-6D01-4AA9-8920-876754AF44A4 res:1080x1920 hz:60 color_depth:8 enabled:true scaling:off origin:(3200,0) degree:270"
+; }
+
 # 1. First you check if a tmux session exists with a given name.
 tmux has-session -t=$session_name 2> /dev/null
 

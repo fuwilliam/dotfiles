@@ -8,8 +8,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.gitconfig: gitconfig
     ~/.bashrc: bashrc
-    ~/.jupyter/jupyter_lab_config.py: jupyter_lab_config.py
-    ~/.jupyter/jupyter_notebook_config.py: jupyter_notebook_config.py
+    ~/.zshrc: zshrc
 
 - create:
     - ~/downloads
